@@ -1,0 +1,132 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #006c6c;
+  color: #FFF;
+}
+.wrapper{
+  /* background-color:yellow; */
+  width: 400px;
+}
+.wrapper input ,
+.wrapper button{
+  display: block;
+  width: 100%;
+}
+
+.wrapper input{
+  margin-bottom: 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #FFF;
+  color: #FFF;
+  text-align: center;
+  font-size: 30px;
+}
+.wrapper button{
+   padding: 15px 0;
+   border-radius: 100px;
+   font-size: 24px;
+   color: #006c6c;
+   border: none;
+   transition: 0.4s all;
+  }
+  .wrapper button:hover{
+     transform: translateY(-5px);
+     cursor: pointer;
+  }
+.wrapper input:focus,
+.wrapper button:focus {
+    outline: none;
+}
+.quiz{
+    width: 800px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 60px auto;
+    background-color: #FFF;
+    color: black;
+    border-radius: 3px;
+}
+.quiz_header{
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #FFF;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.quiz_body{
+  background-color: #ecf0f1;
+  padding: 30px;
+}
+.quiz_user{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.quiz_timer{
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #006c6c;
+  color: #FFF;
+}
+.option{
+  list-style-type: none;
+  margin: 30px 0;
+}
+.options{
+  width: 300px;
+  background-color: #fff;
+  padding: 15px 20px;
+  margin: 15px;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  
+}
+.options:hover{
+  cursor: pointer;
+  border: 2px solid #006c6c;
+  color: #006c6c;
+}
+.next_button{
+  padding: 15px 35px;
+  border-radius: 100px;
+  background-color: #006c6c;
+  color: #fff;
+  border: none;
+  margin-left: 15px;
+  outline: none;
+  transition: 0.4s all;
+}
+.next_button:hover{
+  background-color: #fff;
+  color: #006c6c;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.active{
+  background-color: #006c6c;
+  color: #fff !important;
+}
+.award{
+  font-size: 300px;
+}
+.user_name,
+.user_point,
+.user_time{
+     text-align: center;
+     margin-top: 15px;
+     
+  }
