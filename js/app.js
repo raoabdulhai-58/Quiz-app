@@ -82,7 +82,7 @@ function next(){
 function show(e){
     let question = document.getElementById("questions");
      question.innerHTML =
-      `<h2> ${questions[e].question} </h2>
+      `<h2> Q${question_num+1}: ${questions[e].question} </h2>
       <ul class="option">
       <li class="options">${questions[e].options[0]}</li>
       <li class="options">${questions[e].options[1]}</li>
